@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>IIT</title>
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        p {
+            font-family: 'Inconsolata', monospace'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 1em;
+            font-weight: bold;
+            font-style: oblique;
+
+        }
+
+        #color_by_name {
+            color: blue;
+        }
+
+        #color_by_rgb_value {
+            color: rgb(60, 60, 71);
+        }
+
+        #color_by_hex_value {
+            color: rgba(110, 103, 16, 0.867);
+        }
+
+        #background {
+            background-color: rgb(33, 55, 88);
+            height: 500;
+            width: 300;
+
+            /* border: 4px solid rgb(44, 88, 33); */
+            border-style: solid;
+            border-width: 4px;
+            border-color: rgb(44, 88, 33);
+            border-radius: 8px;
+        }
+
+        #border {
+            border-top: 2px solid rgb(22, 88, 55);
+            border-bottom: 2px solid rgb(122, 99, 55);
+            border-right: 2px solid rgb(66, 11, 99);
+            border-left: 2px solid rgb(243, 9, 20);
+
+            border-top-left-radius: 8px;
+            border-top-right-radius: 16px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 12px;
+            height: 300px;
+            width: 500px;
+        }
+
+        #background_image {
+            opacity: 0.9;
+            font-size: 44px;
+            background-size: 2em;
+            height: 170px;
+            border: 1px solid red;
+            /* background-image: url('https://www.pmindia.gov.in/wp-content/uploads/2022/01/H20220130107710-e1643602468375.jpg'); */
+            background-image: url("../photos/champa-ramji.png");
+
+            /* background-repeat: no-repeat; */
+            background-position: center;
+            /* background-size: cover; */
+            /* background-position: center; */
+            /* background-position: bottom left; */
+            /* background-position: top left; */
+            /* background-position: top right; */
+            /* background-position: bottom right; */
+            /* background-position: 340px 22px; */
+
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+    </style>
+    <style>
+        body {
+            background-color: rgb(185 147 142);
+        }
+
+        .container {
+            background-color: #f99b0f;
+            border: 3px solid #f50b6e;
+            /* padding: 40px; */
+            /* padding-top: 30px; */
+            /* padding-right: 15px; */
+            /* padding-bottom: 40px; */
+            /* padding-left: 20px; */
+            /* padding: 30px 15px 40px 20px;  [padding: top right bottom left] */
+            padding: 25px 20px;
+            /*padding: y/(top/bottom) x/(right/left) */
+
+            /* margin: 40px; */
+            /* margin-top: 30px; */
+            /* margin-right: 15px; */
+            /* margin-bottom: 40px; */
+            /* margin-left: 20px; */
+            /* margin: 30px 15px 40px 20px; [margin: top right bottom left] */
+            margin: 25px 10px;
+            /*margin: y/(top/bottom) x/(right/left) */
+
+            box-sizing: border-box;
+            width: 800px;
+        }
+    </style>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .Store {
+            width: 900px;
+            border: 3px solid rgb(238, 100, 100);
+            background-color: rgb(92, 92, 185);
+            margin: 20px auto;
+        }
+
+        .items {
+            border: 2px solid rgb(39, 4, 97);
+            background-color: #945f0f;
+            margin: 10px 20px;
+            padding: 10px 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #0feb2c;
+        }
+
+        #fruits {
+            float: left;
+            width: 40%;
+        }
+
+        #computers {
+            float: right;
+            width: 51%;
+        }
+
+        #stationaries {
+            clear: both;
+            /* clear: left; */
+            /* clear: right; */
+        }
+
+        p,
+        h3 {
+            /* text-align: justify; */
+            /* text-align: left; */
+            /* text-align: right; */
+            text-align: center;
+        }
+
+        h1 {
+            /* margin: 5px 250px; */
+            text-align: center;
+            /* width: 500px; */
+        }
+    </style>
+    <style>
+        .box {
+            border: 3px solid darkblue;
+            margin: 12px auto;
+            padding: 20PX;
+            width: 700px;
+            background-color: #0feb2c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            color: #f50b6e;
+            /* margin: 10px 250px; */
+            text-align: center;
+        }
+
+        .btn {
+            border: 2px solid red;
+            margin: 2px 5px;
+            /* padding: 4px; */
+            color: rgb(1, 12, 1);
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #4e4ce4;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f50b6e;
+        }
+
+        a:hover {
+            color: rgb(30, 0, 139);
+        }
+
+        a:visited {
+            background-color: rgb(104, 192, 104);
+        }
+
+        a:active {
+            background-color: violet;
+        }
+
+        .btn:hover {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p> Today I have a CY LAB in Chemistry Deparment.</p>
+    <p id="color_by_name">There are no class for geotechnical eng.</p>
+    <p id="color_by_rgb_value">Today is the black day in indian history.</p>
+    <p id="color_by_hex_value">Happy valentine day.</p>
+    <p id="background">This is for background property</p>
+    <p id="border">How we can deal with border of para?</p>
+    <p id="background_image">Propertires for background image</p>
+
+    <h3>CSS model,margin & padding</h3>
+    <div class="container">
+        <h3>Heading First</h3>
+        <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and look
+            of our box as per required.</p>
+    </div>
+    <div class="container">
+        <h3>Heading Second </h3>
+        <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and look
+            of our box as per required.</p>
+    </div>
+    <div class="container">
+        <h3>Heading Third</h3>
+        <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and look
+            of our box as per required.</p>
+    </div>
+    <div class="container">
+        <h3>Heading Fouth</h3>
+        <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and look
+            of our box as per required.</p>
+    </div>
+
+    <!-- FLOAT AND CLEAR WITH ALIGNMENT -->
+    <h3>Float &Clear</h3>
+    <div class="Store">
+        <h1>Welcome To The Market</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p>This is for the properties of content, padding, border and margin. We can
+                adjust the size of content and look of
+                our box as per required. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni modi ut
+                nostrum,
+                aliquam tempora dolor soluta iste quibusdam quo natus.</p>
+        </div>
+
+        <div id="computers" class="items">
+            <h3>Computers</h3>
+            <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and
+                look
+                of
+                our box as per required. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis in
+                recusandae
+                debitis ratione ea sapiente nihil neque iusto aliquid doloremque.
+            </p>
+        </div>
+
+
+        <div id="stationaries" class="items">
+            <h3>Stationaries</h3>
+            <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and
+                look
+                of
+                our box as per required. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et necessitatibus
+                libero
+                rem
+                harum quasi magni enim eveniet explicabo sunt dolorum.</p>
+        </div>
+        <div id="cloths" class="items">
+            <h3>Cloths</h3>
+            <p>This is for the properties of content, padding, border and margin. We can adjust the size of content and
+                look
+                of
+                our box as per required. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quaerat quos,
+                numquam
+                atque commodi et. Illo odio vero doloribus praesentium!</p>
+        </div>
+    </div>
+
+    <!-- Pseudo Selectors & Designing -->
+    <h3>Styling Links & Buttons</h3>
+    <div class="box">
+        <h3 class="heading">Aao Padharo</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellendus aliquam maiores itaque
+            similique magnam, libero, explicabo qui autem natus quam vero ipsam hic molestias illum. Magni consequatur
+            eum eveniet eos! Laudantium ullam doloremque incidunt hic quo, itaque aperiam doloribus.</p>
+        <a href="https://facebook.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+
+</body>
+
+</html>
